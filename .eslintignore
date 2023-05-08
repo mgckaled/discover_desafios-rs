@@ -1,0 +1,8 @@
+vite.config.ts
+node_modules/
+dist/
+.prettierrc
+.prettierignore
+.eslintrc.json
+.stylelintrc.json
+.gitignore
