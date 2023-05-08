@@ -46,9 +46,9 @@ Para conhecer os desafios, acesse <https://app.rocketseat.com.br/discover/challe
     <tbody>
         <tr>
           <td><code>01</code></td>
-          <td><a href="" target="_blank" ><code>portifolio</code></a></td>
+          <td><a href="" target="_blank" ><code>portfolio</code></a></td>
           <td align="center">
-          <a href=""><img width="200px" src="d01_portifolio/.github/assets/preview.jpg" target="_blank"/></a></td>
+          <a href=""><img width="200px" src="d01_portfolio/.github/assets/preview.jpg" target="_blank"/></a></td>
           <td align="center"></td>
         </tr>
     </tbody>

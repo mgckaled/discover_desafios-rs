@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD033 -->
 
-# `Desafio #01 - Portifolio`
+# `Desafio #01 - Portfolio`
 
 Neste desafio foi desenvolvido uma página web de portfolio utilizando HTML e CSS.
 
