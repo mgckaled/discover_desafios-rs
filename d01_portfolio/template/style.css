@@ -1,6 +1,9 @@
+/* ======= GLOBAL STYLES ======= */
+
 :root {
   --body-bg-color: #22212c;
   --text-color: #837e9f;
+  --text-color-hover: #e9dcdc;
   --bg-cards: #302f3d;
   --bg-techs: #cb92b1;
   --border-avatar: #0f0;
@@ -16,7 +19,6 @@
   scroll-behavior: smooth;
   text-rendering: optimizelegibility;
   font-family: 'Merriweather Sans', sans-serif;
-  font-style: normal;
   list-style: none;
   text-decoration: none;
   color: var(--text-color);
@@ -26,7 +28,6 @@
 
 body {
   background-color: var(--body-bg-color);
-  background: var(--body-bg-color);
   padding: 4rem;
   display: grid;
   text-decoration: none;
@@ -35,6 +36,26 @@ body {
 
 .flex {
   display: flex;
+}
+
+.box {
+  width: 348px;
+  background-color: var(--bg-cards);
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: var(--default-radius);
+}
+
+aside {
+  flex-flow: column;
+  grid-area: aside;
+  gap: 3rem;
+}
+
+main {
+  width: calc(95.2rem - 4rem);
+  flex-flow: column;
+  grid-area: main;
+  gap: 3rem;
 }
 
 /* ======= FONT WEIGHT ======= */
@@ -49,14 +70,12 @@ h6 {
 
 h5,
 p,
-.text-regular-exp,
-.text-regular-edu {
+.t-regular-list {
   font-weight: 400;
 }
 
 small,
-.text-light-exp,
-.text-light-edu {
+.t-light-list {
   font-weight: 300;
 }
 
@@ -75,12 +94,12 @@ h2 {
 
 /* title repositories */
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 /* title boxes posts  */
 h4 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 /* text from boxes posts */
@@ -105,26 +124,19 @@ small {
   font-size: 1.3rem;
 }
 
-aside {
-  flex-flow: column;
-  grid-area: aside;
-  gap: 3rem;
+span {
+  font-size: 1.2rem;
 }
 
-.box {
-  width: 348px;
-  background-color: var(--bg-cards);
-  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
-  border-radius: var(--default-radius);
-}
+/* ======= PROFILE CONTAINER ======= */
 
 .profile {
   justify-content: center;
-  padding: 3rem 0 4rem;
+  padding: 3rem 0 3.5rem;
 }
 
 .profile figure {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -145,42 +157,39 @@ aside {
   margin-bottom: 1rem;
 }
 
-aside section:nth-child(2) {
-  display: flex;
-  padding: 3rem 4rem;
-}
+/* ======= SOCIAL CONTAINER ======= */
 
-ul.contact {
+.contact {
   flex-flow: column;
-  gap: 2rem;
-  font-size: 12px;
+  justify-content: center;
+  padding: 3rem 4rem;
+  gap: 3rem;
 }
 
 ul.contact li {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
-ul.contact li p {
-  font-size: 1.2rem;
+ul.contact li a:hover span {
+  color: var(--text-color-hover);
 }
 
-ul.contact li a:hover p {
-  color: #fff;
-}
+/* ======= TECH CONTAINER ======= */
 
-.tech {
+aside section:nth-child(3) {
   display: flex;
   flex-flow: column;
-  padding: 2rem 3rem;
-  gap: 1.5rem;
+  padding: 2rem 2rem 3rem;
+  gap: 2rem;
 }
 
 .tech ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: auto;
+  margin-left: 0.5rem;
   gap: 1.5rem;
 }
 
@@ -193,4 +202,101 @@ ul.contact li a:hover p {
   padding: 1rem;
   border-radius: 2rem;
   background-color: var(--bg-techs);
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tech ul li:hover {
+  opacity: 0.8;
+}
+
+/* ===== EDUCATION / EXPIRIENCE CONTAINER ===== */
+
+aside section:nth-child(4),
+aside section:nth-child(5) {
+  display: flex;
+  padding: 3rem 2rem;
+}
+
+.list {
+  flex-flow: column;
+}
+
+.list ul {
+  margin-left: 4rem;
+}
+
+.list ul li {
+  margin-top: 2rem;
+  list-style: disc;
+}
+
+.list ul li span {
+  display: block;
+}
+
+/* ===== MY PROJECT / MY POSTS CONTAINER ===== */
+
+main .box {
+  width: 100%;
+  padding: 3rem;
+
+  /* gap: 3rem; */
+}
+
+.proj-post {
+  max-height: 8.6rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proj-post p:hover {
+  color: var(--text-color-hover);
+}
+
+/* ======= REPO CONTAINER ======= */
+
+.repos {
+  gap: 3rem;
+}
+
+.repo h3 {
+  gap: 1.6rem;
+}
+
+.repo .description {
+  margin: 1.4rem 0 3.7rem;
+}
+
+.repo .repo-data {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.repo .repo-data .star-branch {
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.code {
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.canva {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 99%;
+  background-color: yellow;
+}
+
+/* ======= FOOTER ======= */
+
+footer {
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  grid-area: footer;
 }

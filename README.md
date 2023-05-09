@@ -44,12 +44,11 @@ Para conhecer os desafios, acesse <https://app.rocketseat.com.br/discover/challe
       </tr>
     </thead>
     <tbody>
-        <tr>
+         <tr>
           <td><code>01</code></td>
-          <td><a href="" target="_blank" ><code>portfolio</code></a></td>
-          <td align="center">
-          <a href=""><img width="200px" src="d01_portfolio/.github/assets/preview.jpg" target="_blank"/></a></td>
-          <td align="center"></td>
+          <td><a href="https://github.com/mgckaled/discover_desafios-rs/tree/main/d01_portfolio" target="_blank" ><code>portfolio</code></a></td>
+          <td align="center"><a href="https://github.com/mgckaled/discover_desafios-rs/blob/main/d01_portfolio/README.md"><img width="200px" src="d01_portfolio/.github/assets/preview.jpg" /></a></td>
+          <td><a href="https://mgckaled.github.io/discover_desafios-rs/d01_portfolio/template/" target="_blank" ><img width="50px" src="d01_portfolio/.github/assets/deploy.svg" /></a></td>
         </tr>
     </tbody>
   </table>

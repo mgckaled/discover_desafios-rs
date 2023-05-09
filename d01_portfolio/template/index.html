@@ -21,7 +21,7 @@
   <body>
     <aside class="flex">
       <header class="box profile flex">
-        <figure>
+        <figure class="flex">
           <img
             src="https://github.com/mgckaled.png?size=128"
             alt="Marcel avatar image from github profile"
@@ -32,8 +32,8 @@
           </figcaption>
         </figure>
       </header>
-      <section class="box">
-        <ul class="contact flex">
+      <section>
+        <ul class="contact box flex">
           <li>
             <img src="./assets/icons/map-pin.svg" alt="Local" />
             <a href="#">
@@ -43,90 +43,153 @@
           <li>
             <img src="./assets/icons/briefcase.svg" alt="Local de Trabalho" />
             <a href="#">
-              <p>Estudando</p>
+              <span>Estudando</span>
             </a>
           </li>
           <li>
             <img src="./assets/icons/github.svg" alt="GitHub" />
             <a href="https://github.com/mgckaled/">
-              <p>mgckaled</p>
+              <span>mgckaled</span>
             </a>
           </li>
           <li>
             <img src="./assets/icons/linkedin.svg" alt="Linkedin" />
             <a href="">
-              <p>Marcel Kaled</p>
+              <span>Marcel Kaled</span>
             </a>
           </li>
           <li>
             <img src="./assets/icons/twitter.svg" alt="Twitter" />
             <a href="#">
-              <p>mgckaled</p>
+              <span>mgckaled</span>
             </a>
           </li>
           <li>
             <img src="./assets/icons/globe.svg" alt="Website" />
-            <a href="#"> <p>mgck_test@gmail.com</p> </a>
+            <a href="#"> <span>mgck_test@gmail.com</span> </a>
           </li>
           <li>
             <img src="./assets/icons/mail.svg" alt="Email" />
             <a href="#">
-              <p>mgck_test@gmail.com</p>
+              <span>mgck_test@gmail.com</span>
             </a>
           </li>
         </ul>
       </section>
       <section class="tech box">
-        <h4>Tecnologias</h4>
+        <h2>Tecnologias</h2>
         <ul>
           <li>
-            <h6>
-              html
-            </h6>
+            <h6>html</h6>
           </li>
           <li>
-            <h6>
-              css
-            </h6>
+            <h6>css</h6>
           </li>
           <li>
-            <h6>
-              git
-            </h6>
+            <h6>git</h6>
           </li>
           <li>
-            <h6>
-              github
-            </h6>
+            <h6>github</h6>
           </li>
           <li>
-            <h6>
-              javascript
-            </h6>
+            <h6>javascript</h6>
           </li>
           <li>
-            <h6>
-              typescript
-            </h6>
+            <h6>typescript</h6>
           </li>
           <li>
-            <h6>
-              react
-            </h6>
+            <h6>react</h6>
           </li>
           <li>
-            <h6>
-              reactnative
-            </h6>
+            <h6>reactnative</h6>
           </li>
           <li>
-            <h6>
-              node.js
-            </h6>
+            <h6>node.js</h6>
+          </li>
+        </ul>
+      </section>
+      <section class="list box">
+        <h2>Experiência</h2>
+        <ul>
+          <li>
+            <span class="t-regular-list">Rocketseat</span>
+            <span class="t-light-list">10/20222</span>
+            <span class="t-light-list">Discover</span>
+          </li>
+        </ul>
+      </section>
+      <section class="list box">
+        <h2>Educação</h2>
+        <ul>
+          <li>
+            <span class="t-regular-list">Rocketseat</span>
+            <span class="t-light-list">10/20222</span>
+            <span class="t-light-list">Discover</span>
           </li>
         </ul>
       </section>
     </aside>
-    <main></main>
+    <main class="flex">
+      <div class="proj-post box flex animation">
+        <h2>My Projects</h2>
+        <a href="https://github.com/mgckaled?tab=repositories" target="_blank" rel="noopener noreferrer">
+          <p>Veja todos</p>
+        </a>
+      </div>
+
+      <div class="repos flex animation">
+        <div class="repo box animation">
+          <h3 class="flex">
+            <img src="./assets/icons/folder.svg" width="20px" alt="Pasta" />
+            my-onix
+          </h3>
+          <p class="description">Consulte os códigos de erro que aparecem no painel do veículo Onix.</p>
+          <div class="repo-data flex">
+            <div class="star-branch flex">
+              <img src="./assets/icons/star.svg" width="20px" alt="Estrela" />
+              <p>100</p>
+
+              <img src="./assets/icons/git-branch.svg" width="20px" alt="Git-Branch" />
+              <p>100</p>
+            </div>
+            <div class="code flex">
+              <div class="canva"></div>
+              <p>JavaScript</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="repo box animation">
+          <h3 class="flex">
+            <img src="./assets/icons/folder.svg" width="20px" alt="Pasta" />
+            my-onix
+          </h3>
+          <p class="description">Consulte os códigos de erro que aparecem no painel do veículo Onix.</p>
+          <div class="repo-data flex">
+            <div class="star-branch flex">
+              <img src="./assets/icons/star.svg" width="20px" alt="Estrela" />
+              <p>100</p>
+
+              <img src="./assets/icons/git-branch.svg" width="20px" alt="Git-Branch" />
+              <p>100</p>
+            </div>
+            <div class="code flex">
+              <div class="canva"></div>
+              <p>JavaScript</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-post box animation">
+        <div>
+          <h2>Recent Posts</h2>
+        </div>
+      </div>
+    </main>
+
+    <footer class="flex">
+      <p>Feito com muito 💜 por Marcel Kaled</p>
+    </footer>
   </body>
 </html>

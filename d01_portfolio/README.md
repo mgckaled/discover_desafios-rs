@@ -4,7 +4,7 @@
 
 Neste desafio foi desenvolvido uma página web de portfolio utilizando HTML e CSS.
 
-[LINK](https://app.rocketseat.com.br/discover/challenges/portfolio) para acesso aos desafios. É necessário ter uma conta na [Rocketseat](https://www.rocketseat.com.br/) para acessá-lo.
+> [LINK](https://app.rocketseat.com.br/discover/challenges/portfolio) de acesso aos desafios. É necessário ter uma conta na [Rocketseat](https://www.rocketseat.com.br/) para acessá-los.
 
 <p align="center">
   <a href="#-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
@@ -25,7 +25,7 @@ Neste desafio foi desenvolvido uma página web de portfolio utilizando HTML e CS
 
 ## 🖥️ Deploy
 
-Indisponível.
+Aprecie o resultado do desafio [AQUI](https://mgckaled.github.io/discover_desafios-rs/d01_portfolio/template/).
 
 ## 🚀 Tecnologias
 
@@ -47,4 +47,4 @@ Esse projeto está sob a licença MIT.
 
 Feito com ♥ by Marcel Kaled 👋
 
-> Voltar para a [lista de projetos](../README.md)
+> Voltar para a [lista de desafios](../README.md)
